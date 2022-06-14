@@ -1,0 +1,38 @@
+{% extends 'basic_templates/base.html' %}
+
+<!--Название страницы-->
+{% block title %}Поиск{% endblock %}
+
+
+<!--Шапка-->
+{% block title_of_page %}
+    {{super()}}
+{% endblock %}
+
+{% block page_name %}SEARCH{% endblock %}
+
+<!--    Поиск-->
+{% block search %}
+    {{super()}}
+{% endblock %}
+
+{% block word_to_find %}{{finded_word}}{% endblock %}
+
+{% block amount_posts %}
+{% if posts|length != 0%}
+Найдено постов: {{posts|length}}
+{% else %}
+Нет совпадений
+{% endif%}
+{% endblock %}
+
+<!--    Тело-->
+{% block head %}
+    {{super()}}
+{% endblock %}
+
+
+<!--Скрытие блоки-->
+{% block head_one_post %}{% endblock %}
+{% block errors %}{% endblock %}
+{% block comments_full %}{% endblock %}

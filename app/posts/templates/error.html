@@ -1,0 +1,19 @@
+{% extends 'basic_templates/base.html' %}
+
+<!--Название страницы-->
+{% block title %}Ошибка{% endblock %}
+
+<!--      ошибки-->
+{% block errors %}
+{{super()}}
+{% endblock errors %}
+
+
+
+<!--Скрытие блоки-->
+
+
+{% block search %}{% endblock %}
+{% block head %}{% endblock %}
+{% block head_one_post %}{% endblock %}
+{% block comments_full %}{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'basic_templates/base.html' %}
+
+<!--Название страницы-->
+{% block title %}Пост{% endblock %}
+
+<!--Шапка-->
+{% block title_of_page %}
+    {{super()}}
+{% endblock %}
+
+{% block page_name %}POST{% endblock %}
+
+<!--    Тело для 1 поста-->
+{% block head_one_post %}
+    {{super()}}
+{% endblock %}
+
+<!--      Комменты полностью-->
+{% block comments_full %}
+    {{super()}}
+{% endblock %}
+
+
+<!--Скрытие блоки-->
+
+
+{% block search %}{% endblock %}
+{% block head %}{% endblock %}
+{% block errors %}{% endblock errors %}
