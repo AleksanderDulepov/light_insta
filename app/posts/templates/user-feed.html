@@ -11,6 +11,9 @@
 
 {% block page_name %}{{finded_username}}{% endblock %}
 
+{% block ref_left %}/{% endblock %}
+{% block picture_ref_left %}../static/img/back.png{% endblock %}
+
 <!--    Тело-->
 {% block head %}
     {{super()}}
@@ -19,6 +22,7 @@
 
 <!--Скрытие блоки-->
 
+{% block reference_right %}{% endblock %}
 
 {% block search %}{% endblock %}
 {% block comments_full %}{% endblock %}

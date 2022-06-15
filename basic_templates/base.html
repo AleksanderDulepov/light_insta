@@ -17,11 +17,24 @@
 {% block title_of_page %}
 <header class="container header">
 
-    <div class="header__wrapper">
+    <span class="header__wrapper">
         <a href="/" class="header__nosvg">
             {% block page_name %}{% endblock %}
         </a>
-    </div>
+{% block reference_right %}
+        <a href="{% block ref_right %}{% endblock %}" class="header__bookmark-btn">
+        <img src="{% block picture_ref_right %}{% endblock %}" alt="" class="header__bookmark-icon" width="28">
+      </a>
+{% endblock %}
+
+        {% block reference_left %}
+        <a href="{% block ref_left %}{% endblock %}" class="header__btn-back">
+        <img src="{% block picture_ref_left %}{% endblock %}" alt="назад" class="header__bookmark-icon" width="28">
+      </a>
+        {% endblock %}
+
+    </span>
+
 </header>
 {% endblock %}
 

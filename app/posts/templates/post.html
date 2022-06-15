@@ -10,6 +10,10 @@
 
 {% block page_name %}POST{% endblock %}
 
+{% block ref_left %}/{% endblock %}
+{% block picture_ref_left %}../static/img/back.png{% endblock %}
+
+
 <!--    Тело для 1 поста-->
 {% block head_one_post %}
     {{super()}}
@@ -23,7 +27,7 @@
 
 <!--Скрытие блоки-->
 
-
+{% block reference_right %}{% endblock %}
 {% block search %}{% endblock %}
 {% block head %}{% endblock %}
 {% block errors %}{% endblock errors %}

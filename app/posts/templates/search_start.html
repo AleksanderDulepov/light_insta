@@ -3,13 +3,15 @@
 <!--Название страницы-->
 {% block title %}Поиск{% endblock %}
 
-
 <!--Шапка-->
 {% block title_of_page %}
     {{super()}}
 {% endblock %}
 
 {% block page_name %}SEARCH{% endblock %}
+
+{% block ref_left %}/{% endblock %}
+{% block picture_ref_left %}static/img/back.png{% endblock %}
 
 <!--    Поиск-->
 {% block search %}
@@ -22,6 +24,7 @@
 
 
 <!--Скрытие блоки-->
+{% block reference_right %}{% endblock %}
 {% block head %}{% endblock %}
 {% block head_one_post %}{% endblock %}
 {% block errors %}{% endblock %}

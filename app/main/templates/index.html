@@ -10,6 +10,15 @@
 
 {% block page_name %}Все посты{% endblock %}
 
+{% block reference_right %}
+{{super()}}
+{% endblock %}
+
+
+{% block ref_right %}/search{% endblock %}
+{% block picture_ref_right %}static/img/discover.png{% endblock %}
+
+
 
 <!--    Тело-->
 {% block head %}
@@ -19,7 +28,7 @@
 
 <!--Скрытие блоки-->
 
-
+{% block reference_left %}{% endblock %}
 {% block search %}{% endblock %}
 {% block comments_full %}{% endblock %}
 {% block errors %}{% endblock errors %}
