@@ -1,0 +1,10 @@
+[Unit]
+Description=Flask light_insta service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/asdult/light_insta
+ExecStart=/home/asdult/light_insta/env/bin/python run.py
+
+[Install]
+WantedBy=multi-user.target
