@@ -41,6 +41,6 @@ jobs:
           password: ${{ secrets.PASSWORD_VM }}
           script: |
             cd light_insta_action
-            echo ${{ PASSWORD_VM }} | -S docker compose up -d
+            echo ${{ secrets.PASSWORD_VM }} | -S docker compose up -d
 
 
