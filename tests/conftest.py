@@ -1,7 +1,7 @@
 import pytest
-import run
-from app.posts.dao.posts_dao import PostsDAO
-from app.comments.dao.comments_dao import CommentsDAO
+import app_
+from app_.posts.dao.posts_dao import PostsDAO
+from app_.comments.dao.comments_dao import CommentsDAO
 
 #для всех фикстур:
 app = run.app

@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+    image: aleksanderdulepov/flask_app_repo
+    ports:
+      - 80:80
+    volumes:
+      - ./flask_data_host:/flask_data_cont
+
